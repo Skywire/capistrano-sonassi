@@ -1,0 +1,1 @@
+load File.expand_path('../tasks/sonassi.rake', __FILE__)
