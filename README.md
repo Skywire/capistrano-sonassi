@@ -21,3 +21,9 @@ Add the following to your project Capfile
 ~~~
 require "capistrano/sonassi"
 ~~~
+
+## Configuration
+
+You may also need to update `config/deploy.rb` with the following on servers:
+
+    set :default_env, { path: '/opt/php/php-7.2/bin/:/microcloud/domains/cordm2/domains/.composer:$PATH' }
