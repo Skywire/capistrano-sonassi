@@ -24,6 +24,12 @@ require "capistrano/sonassi"
 
 ## Configuration
 
+This uses the `:hosts` variable to clear cache, but you can add additional hosts to clear for a multisite setup into `:extra_sonassi_hosts`:
+
+```
+set :extra_sonassi_hosts, ['hostname1', 'hostname2']
+```
+
 You may also need to update `config/deploy.rb` with the following on servers:
 
     set :default_env, { path: '/opt/php/php-7.2/bin/:/microcloud/domains/cordm2/domains/.composer:$PATH' }
